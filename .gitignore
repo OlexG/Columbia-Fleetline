@@ -1,0 +1,6 @@
+/target/
+
+# Generated reconciliation outputs
+/matches.json
+/matches_heuristic.json
+/matches_maxflow.json

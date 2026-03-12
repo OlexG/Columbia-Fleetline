@@ -1,0 +1,19 @@
+[package]
+name = "comp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+csv = "1.4.0"
+rustc-hash = "2.1.1"
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+debug = false
+incremental = false
